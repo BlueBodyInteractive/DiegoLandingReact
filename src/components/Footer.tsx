@@ -37,7 +37,7 @@ const Footer = () => {
           <div className="mt-8 pt-8 border-t border-gray-800 text-gray-500 text-sm">
             <p>&copy; {new Date().getFullYear()} Tu Taller de Confianza. Todos los derechos reservados.</p>
             <p className="mt-2">
-              Hecho con <span className="text-red-500">❤</span> por{" "}
+              Hecho con <span className="text-white">♥</span> por{" "}
               <a
                 href="https://bluebody.pe"
                 target="_blank"
