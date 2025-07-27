@@ -22,7 +22,7 @@ const About = () => {
             />
           </div>
           <div>
-            <h3 className="text-3xl font-bold mb-6 text-white">La Historia de Samurai Abel</h3>
+            <h3 className="text-3xl font-bold mb-6 text-white">Nuestra Historia</h3>
             <p className="text-gray-300 mb-6 text-lg leading-relaxed">
               Comenzamos como un pequeño taller familiar con una gran pasión por las motocicletas. 
               Hoy, somos reconocidos como uno de los mejores talleres especializados de la región.
