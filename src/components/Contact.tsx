@@ -15,28 +15,29 @@ const Contact = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
+          {/* Contact Info */}
           <div>
             <h3 className="text-2xl font-bold mb-6 text-white">Información de Contacto</h3>
-            <div className="space-y-6">
-              <div className="flex items-center">
-                <MapPin className="w-6 h-6 text-red-400 mr-4" />
+            <div className="space-y-6 text-gray-300">
+              <div className="flex items-start gap-4">
+                <MapPin className="w-6 h-6 text-red-400 mt-1" />
                 <div>
-                  <h4 className="text-white font-semibold">Dirección</h4>
-                  <p className="text-gray-400">Av. Principal 123, Ciudad, País</p>
+                  <h4 className="font-semibold text-white">Dirección</h4>
+                  <p>Av. Principal 123, Ciudad, País</p>
                 </div>
               </div>
-              <div className="flex items-center">
-                <Phone className="w-6 h-6 text-red-400 mr-4" />
+              <div className="flex items-start gap-4">
+                <Phone className="w-6 h-6 text-red-400 mt-1" />
                 <div>
-                  <h4 className="text-white font-semibold">Teléfono</h4>
-                  <p className="text-gray-400">+1 (555) 123-4567</p>
+                  <h4 className="font-semibold text-white">Teléfono</h4>
+                  <p>+1 (555) 123-4567</p>
                 </div>
               </div>
-              <div className="flex items-center">
-                <Mail className="w-6 h-6 text-red-400 mr-4" />
+              <div className="flex items-start gap-4">
+                <Mail className="w-6 h-6 text-red-400 mt-1" />
                 <div>
-                  <h4 className="text-white font-semibold">Email</h4>
-                  <p className="text-gray-400">info@samuraiabel.com</p>
+                  <h4 className="font-semibold text-white">Email</h4>
+                  <p>info@tallerdemotos.com</p>
                 </div>
               </div>
             </div>
@@ -53,7 +54,7 @@ const Contact = () => {
 
             <div className="mt-8">
               <a
-                href="https://wa.me/1234567890"
+                href="https://wa.me/51981048628?text=Hola,%20vi%20tu%20página%20web%20y%20quiero%20llevar%20mi%20moto%20al%20taller.%20¿Podrías%20darme%20más%20información?"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105"
@@ -64,22 +65,19 @@ const Contact = () => {
             </div>
           </div>
 
+          {/* Embedded Google Map */}
           <div>
-            <h3 className="text-2xl font-bold mb-6 text-white">Ubicación</h3>
-            <div className="bg-gray-900 rounded-lg p-8 border border-red-600/20 text-center">
-              <MapPin className="w-16 h-16 text-red-400 mx-auto mb-4" />
-              <p className="text-gray-400 mb-6">
-                Haz clic en el mapa para abrir WhatsApp y obtener direcciones exactas a nuestro taller.
-              </p>
-              <a
-                href="https://wa.me/1234567890?text=Hola,%20necesito%20direcciones%20al%20taller"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300"
-              >
-                <MapPin className="w-5 h-5 mr-2" />
-                Ver Ubicación en WhatsApp
-              </a>
+            <h3 className="text-2xl font-bold mb-6 text-white">Ubicación en el Mapa</h3>
+            <div className="overflow-hidden rounded-lg shadow-lg border border-red-600/30">
+              <iframe
+                title="Ubicación del taller"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3900.9089316057575!2d-77.026347!3d-12.1183833!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c810a3bfa32b%3A0x1ea486f39beb9066!2sDesert%20Sport%20Racing%20S.A.C.!5e0!3m2!1ses-419!2spe!4v1753584438784!5m2!1ses-419!2spe"
+                width="100%"
+                height="400"
+                loading="lazy"
+                allowFullScreen
+                className="w-full h-96 border-0"
+              ></iframe>
             </div>
           </div>
         </div>

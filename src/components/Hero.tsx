@@ -14,7 +14,7 @@ const Hero = () => {
       <div className="absolute inset-0">
         <img
           src="https://images.pexels.com/photos/1413412/pexels-photo-1413412.jpeg"
-          alt="Motorcycle Workshop"
+          alt="Taller de Motocicletas"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/70"></div>
@@ -22,14 +22,13 @@ const Hero = () => {
 
       <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
         <h1 className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-red-500 via-yellow-500 to-red-500 bg-clip-text text-transparent animate-pulse">
-          SAMURAI ABEL
+          TU TALLER DE CONFIANZA
         </h1>
         <p className="text-xl md:text-2xl mb-8 text-gray-300 font-light">
-          Taller Especializado en Motocicletas
+          Especialistas en mantenimiento, reparación y personalización de motocicletas
         </p>
         <p className="text-lg mb-12 text-gray-400 max-w-2xl mx-auto">
-          Donde la pasión por las motos se encuentra con la maestría técnica. 
-          Más de 10 años brindando el mejor servicio y mantenimiento para tu compañera de aventuras.
+          Más de una década brindando un servicio profesional y personalizado para motociclistas exigentes.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button
@@ -38,14 +37,13 @@ const Hero = () => {
           >
             Ver Servicios
           </button>
-          <a
-            href="https://wa.me/1234567890"
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            onClick={() => scrollToSection('contacto')}
             className="bg-transparent border-2 border-red-600 text-red-400 hover:bg-red-600 hover:text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300"
           >
-            Contactar Ahora
-          </a>
+            Contáctanos
+          </button>
+
         </div>
       </div>
 
@@ -54,7 +52,7 @@ const Hero = () => {
       </div>
 
       <a
-        href="https://wa.me/1234567890"
+        href="https://wa.me/51981048628?text=Hola,%20vi%20tu%20página%20web%20y%20quiero%20llevar%20mi%20moto%20al%20taller.%20¿Podrías%20darme%20más%20información?"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-2xl transition-all duration-300 transform hover:scale-110"

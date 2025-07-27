@@ -7,7 +7,7 @@ export const reviews = [
   },
   {
     name: "María Rodríguez",
-    rating: 5,
+    rating: 4,
     comment: "El mejor taller de la ciudad. Atención personalizada y precios justos. 100% recomendado.",
     avatar: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg"
   },
